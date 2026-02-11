@@ -3,7 +3,7 @@
 Basic academic version of the Battleship game to build upon.
 
 ## Group Nickname
-**TP06-01**
+TP06-01 (DFJ)
 
 ## Team Members
 
@@ -15,7 +15,7 @@ Basic academic version of the Battleship game to build upon.
 
 ## Battleships
 
-### Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota:
+Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota:
 
 | Batalha Naval | Descobrimentos | Inglês | Dimensão | N.º Navios | Link Wikipedia |
 | ------------- | -------------- | ------ | -------- | ---------- | -------------- |
