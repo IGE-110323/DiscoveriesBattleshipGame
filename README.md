@@ -15,7 +15,8 @@ Basic academic version of the Battleship game to build upon.
 
 ## Battleships
 
-**| Batalha Naval | Descobrimentos | Inglês | Dimensão | N.º Navios |**
+| Batalha Naval | Descobrimentos | Inglês | Dimensão | N.º Navios |
+| ------------- | -------------- | ------ | -------- | ---------- |
 | Porta-Aviões | Galeão | Galleon | 5 | 1 |
 | Navio de 4 canhões | Fragata | Frigate | 4 | 1 |
 | Navio de 3 canhões | Nau | Carrack | 3 | 2 |
