@@ -15,7 +15,7 @@ Basic academic version of the Battleship game to build upon.
 
 ## Tipos de Navios (Época dos Descobrimentos)
 
-[cite_start]Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota[cite: 50, 51]:
+Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota:
 
 | Navio | Correspondência Atual | Dimensão | Quantidade | Link Wikipedia |
 | :--- | :--- | :---: | :---: | :--- |
