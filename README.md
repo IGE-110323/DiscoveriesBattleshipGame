@@ -1,3 +1,14 @@
 # Battleship
 
-Basic academic version of Battleship game to build upon.
+Basic academic version of the Battleship game to build upon.
+
+## Group Nickname
+**TP06-01**
+
+## Team Members
+
+| Número  | Nome                         | Curso |
+|---------|-------------------------------|--------|
+| 122994  | Diogo Almeida                 | IGE    |
+| 122466  | José Maria Remédios           | IGE    |
+| 110323  | Francisco Meirinho da Silva   | IGE    |
