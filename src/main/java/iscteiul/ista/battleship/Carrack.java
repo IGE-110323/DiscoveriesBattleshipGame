@@ -8,8 +8,9 @@ public class Carrack extends Ship {
     private static final String NAME = "Nau";
 
     /**
-     * @param bearing
-     * @param pos
+     * * @param bearing A orientação do navio (NORTH, SOUTH, EAST, WEST).
+     * @param pos A posição (coordenada) inicial da popa do navio.
+     * @throws IllegalArgumentException Se a orientação (bearing) for inválida para este tipo de navio.
      */
     public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
         super(Carrack.NAME, bearing, pos);
