@@ -14,6 +14,17 @@ Basic academic version of the Battleship game to build upon.
 | 110323  | Francisco Meirinho da Silva   | IGE    |
 
 ## Battleships
+
+### Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota:
+
+| Batalha Naval | Descobrimentos | Inglês | Dimensão | N.º Navios | Link Wikipedia |
+| ------------- | -------------- | ------ | -------- | ---------- | -------------- |
+| Porta-Aviões | Galeão | Galleon | 5 | 1 | [Ver mais](https://pt.wikipedia.org/wiki/Gale%C3%A3o) |
+| Navio de 4 canhões | Fragata | Frigate | 4 | 1 | [Ver mais](https://pt.wikipedia.org/wiki/Fragata) |
+| Navio de 3 canhões | Nau | Carrack | 3 | 2 | [Ver mais](https://pt.wikipedia.org/wiki/Nau) |
+| Navio de 2 canhões | Caravela | Caravel | 2 | 3 | [Ver mais](https://pt.wikipedia.org/wiki/Caravela) | 
+| Submarino | Barca | Barge | 1 | 4 | [Ver mais](https://pt.wikipedia.org/wiki/Barca) |
+
 ## Regras do Jogo
 
 ### 1. Preparação do Tabuleiro
@@ -46,14 +57,3 @@ Basic academic version of the Battleship game to build upon.
 
 ### 6. Variante Opcional
 - O jogo pode incluir um modo contra **IA**, usando um modelo open‑source.
-## Tipos de Navios (Época dos Descobrimentos)
-
-Nesta versão do jogo, utilizamos embarcações históricas que variam em dimensão e número de exemplares por frota:
-
-| Batalha Naval | Descobrimentos | Inglês | Dimensão | N.º Navios | Link Wikipedia |
-| ------------- | -------------- | ------ | -------- | ---------- | -------------- |
-| Porta-Aviões | Galeão | Galleon | 5 | 1 | [Ver mais](https://pt.wikipedia.org/wiki/Gale%C3%A3o) |
-| Navio de 4 canhões | Fragata | Frigate | 4 | 1 | [Ver mais](https://pt.wikipedia.org/wiki/Fragata) |
-| Navio de 3 canhões | Nau | Carrack | 3 | 2 | [Ver mais](https://pt.wikipedia.org/wiki/Nau) |
-| Navio de 2 canhões | Caravela | Caravel | 2 | 3 | [Ver mais](https://pt.wikipedia.org/wiki/Caravela) | 
-| Submarino | Barca | Barge | 1 | 4 | [Ver mais](https://pt.wikipedia.org/wiki/Barca) |
