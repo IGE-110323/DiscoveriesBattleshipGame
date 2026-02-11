@@ -1,8 +1,9 @@
 # Battleship
 
-Basic academic version of the Battleship game to build upon.
+Versão académica básica do jogo 'Batalha Naval' para construir sobre.
 
 ## Group Nickname
+
 TP06-01 (DFJ)
 
 ## Team Members
@@ -25,7 +26,7 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
 | Navio de 2 canhões | Caravela | Caravel | 2 | 3 | [Ver mais](https://pt.wikipedia.org/wiki/Caravela) | 
 | Submarino | Barca | Barge | 1 | 4 | [Ver mais](https://pt.wikipedia.org/wiki/Barca) |
 
-## Regras do Jogo
+## Game Rules
 
 ### 1. Preparação do Tabuleiro
 - Cada jogador possui duas grelhas de **10×10**:
