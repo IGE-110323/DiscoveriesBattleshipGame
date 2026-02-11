@@ -51,10 +51,8 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
   - Tiros falhados
   - Tiros certeiros
   - Navios afundados
-- As jogadas podem ser guardadas numa base de dados (ex.: JSON).
 
 ### 5. Condição de Vitória
 - Ganha o jogo o primeiro jogador a **afundar todos os navios** da frota adversária.
 
-### 6. Variante Opcional
-- O jogo pode incluir um modo contra **IA**, usando um modelo open‑source.
+
