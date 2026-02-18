@@ -4,7 +4,7 @@ Versão académica básica do jogo 'Batalha Naval' para construir sobre.
 
 ## Group Nickname
 
-TP06-01 (DFJ)
+TP06-01 (DFJP)
 
 ## Team Members
 
