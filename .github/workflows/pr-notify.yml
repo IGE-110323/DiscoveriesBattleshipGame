@@ -9,9 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send notification comment
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate GitHub CLI
+        run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Notify assignee
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           ASSIGNEE=$(jq -r '.pull_request.assignee.login // empty' "$GITHUB_EVENT_PATH")
 
@@ -21,8 +28,5 @@ jobs:
           fi
 
           gh pr comment "$PR_NUMBER" --body "👋 Olá @$ASSIGNEE!  
-          Há um novo Pull Request atribuído a ti.  
+          Tens um novo Pull Request atribuído a ti.  
           Dá uma vista de olhos quando puderes."
-
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
