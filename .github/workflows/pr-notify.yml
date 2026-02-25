@@ -1,5 +1,9 @@
 name: Notify Assignee on Pull Request
 
+# Permissões necessárias para permitir comentários no PR
+permissions:
+  pull-requests: write
+
 on:
   pull_request:
     types: [opened, reopened]
@@ -9,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Authenticate GitHub CLI
@@ -27,6 +31,6 @@ jobs:
             exit 0
           fi
 
-          gh pr comment "$PR_NUMBER" --body "👋 Olá @$ASSIGNEE!  
-          Tens um novo Pull Request atribuído a ti.  
+          gh pr comment "$PR_NUMBER" --body "👋 Olá @$ASSIGNEE!
+          Tens um novo Pull Request atribuído a ti.
           Dá uma vista de olhos quando puderes."
