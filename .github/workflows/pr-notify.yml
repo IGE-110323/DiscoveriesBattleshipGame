@@ -1,0 +1,28 @@
+name: Notify Assignee on Pull Request
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send notification comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ASSIGNEE=$(jq -r '.pull_request.assignee.login // empty' "$GITHUB_EVENT_PATH")
+
+          if [ -z "$ASSIGNEE" ]; then
+            echo "No assignee found. Skipping notification."
+            exit 0
+          fi
+
+          gh pr comment "$PR_NUMBER" --body "👋 Olá @$ASSIGNEE!  
+          Há um novo Pull Request atribuído a ti.  
+          Dá uma vista de olhos quando puderes."
+
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
