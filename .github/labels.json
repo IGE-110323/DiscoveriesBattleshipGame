@@ -24,6 +24,11 @@
     "color": "D1D5DB",
     "description": "CAUSE: Valid idea with no timeline ACTION: Revisit later"
   },
+  { 
+  "name": "status: IN PROGRESS", 
+  "color": "0EA5E9", 
+  "description": "Work on this issue is currently ongoing" 
+},
   {
     "name": "status: DUPLICATE",
     "color": "D1D5DB",
