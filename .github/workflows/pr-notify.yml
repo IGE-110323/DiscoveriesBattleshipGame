@@ -31,7 +31,5 @@ jobs:
           fi
 
           for USER in $ASSIGNEES; do
-            gh pr comment "$PR_NUMBER" --body "👋 Olá @$USER!
-Tens um novo Pull Request atribuído a ti.
-Dá uma vista de olhos quando puderes."
+            gh pr comment "$PR_NUMBER" --body "👋 Olá @$USER! Tens um novo 'Pull Request' atribuído a ti. Dá uma vista de olhos quando puderes!"
           done
