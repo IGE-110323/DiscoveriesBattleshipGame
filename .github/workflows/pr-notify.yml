@@ -1,0 +1,37 @@
+name: Notify Assignees on Pull Request
+
+permissions:
+  pull-requests: write
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate GitHub CLI
+        run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Notify all assignees
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          ASSIGNEES=$(jq -r '.pull_request.assignees[].login // empty' "$GITHUB_EVENT_PATH")
+
+          if [ -z "$ASSIGNEES" ]; then
+            echo "No assignees found. Skipping notification."
+            exit 0
+          fi
+
+          for USER in $ASSIGNEES; do
+            gh pr comment "$PR_NUMBER" --body "👋 Olá @$USER!
+Tens um novo Pull Request atribuído a ti.
+Dá uma vista de olhos quando puderes."
+          done
