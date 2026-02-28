@@ -55,5 +55,3 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
 
 ### 5. Condição de Vitória
 - Ganha o jogo o primeiro jogador a **afundar todos os navios** da frota adversária.
-
-Estamos a usar o git stash neste momento.
