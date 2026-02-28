@@ -56,3 +56,4 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
 - Ganha o jogo o primeiro jogador a **afundar todos os navios** da frota adversária.
 
 
+ze remedios
