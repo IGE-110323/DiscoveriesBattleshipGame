@@ -1,23 +1,23 @@
 package iscteiul.ista.battleship;
 
 /**
- * Representa uma Barca na frota dos Descobrimentos.
- * De acordo com as regras do jogo, este navio é o mais pequeno e ocupa apenas 1 posição (quadrado) no tabuleiro.
- * * @author Teu Nome de Aluno
+ * Represents a Barge in the Age of Discoveries fleet.
+ * According to the game rules, this ship is the smallest and occupies only 1 position (square) on the board.
  */
 public class Barge extends Ship {
-    /** Tamanho fixo da Barca (ocupa 1 quadrado). */
+
+    /** Fixed size of the Barge (occupies 1 square). */
     private static final Integer SIZE = 1;
 
-    /** Nome representativo do navio. */
-    private static final String NAME = "Barca";
+    /** Representative name of the ship. */
+    private static final String NAME = "Barge";
 
     /**
-     * Construtor que inicializa uma Barca com a sua orientação e posição.
-     * Como a Barca ocupa apenas 1 posição, a orientação (bearing) não altera a 
-     * área ocupada no tabuleiro, mas é registada no sistema.
-     * * @param bearing A orientação do navio (Norte, Sul, Este, Oeste).
-     * @param pos     A coordenada inicial (e única) onde a Barca será posicionada.
+     * Constructor that initializes a Barge with its bearing and position.
+     * Since the Barge occupies only 1 position, the bearing does not change the
+     * area occupied on the board, but it is registered in the system.
+     * * @param bearing The orientation of the ship (North, South, East, West).
+     * @param pos     The initial (and only) coordinate where the Barge will be positioned.
      */
     public Barge(Compass bearing, IPosition pos) {
         super(Barge.NAME, bearing, pos);
@@ -25,8 +25,8 @@ public class Barge extends Ship {
     }
 
     /**
-     * Devolve o tamanho da Barca.
-     * * @return O número de posições que este navio ocupa (sempre 1).
+     * Returns the size of the Barge.
+     * * @return The number of positions this ship occupies (always 1).
      */
     @Override
     public Integer getSize() {

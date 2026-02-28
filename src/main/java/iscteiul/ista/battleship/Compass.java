@@ -1,43 +1,45 @@
 package iscteiul.ista.battleship;
 
 /**
- * Representa as direções (pontos cardeais) usadas para orientar os navios no tabuleiro.
- * * @author fba
+ * Represents the directions (cardinal points) used to orient the ships on the board.
  */
 public enum Compass {
-    /** Direção Norte (representada por 'n') */
+    /** North direction (represented by 'n') */
     NORTH('n'),
-    /** Direção Sul (representada por 's') */
+    /** South direction (represented by 's') */
     SOUTH('s'),
-    /** Direção Este/Leste (representada por 'e') */
+    /** East direction (represented by 'e') */
     EAST('e'),
-    /** Direção Oeste (representada por 'o') */
+    /** West direction (represented by 'o') */
     WEST('o'),
-    /** Direção desconhecida ou inválida (representada por 'u') */
+    /** Unknown or invalid direction (represented by 'u') */
     UNKNOWN('u');
 
-    /** O carácter interno que guarda a letra da direção. */
+    /** The internal character that stores the direction letter. */
     private final char c;
 
     /**
-     * Construtor do Enum. Associa um carácter a cada direção.
-     * * @param c O carácter que representa a direção (ex: 'n' para Norte).
+     * Enum constructor. Associates a character with each direction.
+     *
+     * @param c The character representing the direction (e.g., 'n' for North).
      */
     Compass(char c) {
         this.c = c;
     }
 
     /**
-     * Devolve o carácter associado a esta direção.
-     * * @return O carácter representativo da direção.
+     * Returns the character associated with this direction.
+     *
+     * @return The representative character of the direction.
      */
     public char getDirection() {
         return c;
     }
 
     /**
-     * Devolve a representação em formato de texto (String) da direção.
-     * * @return Uma String contendo a letra da direção.
+     * Returns the text (String) representation of the direction.
+     *
+     * @return A String containing the direction letter.
      */
     @Override
     public String toString() {
@@ -45,9 +47,10 @@ public enum Compass {
     }
 
     /**
-     * Converte um carácter solto no seu respetivo ponto cardeal (Compass).
-     * * @param ch O carácter a ser convertido ('n', 's', 'e' ou 'o').
-     * @return A direção {@link Compass} correspondente, ou UNKNOWN se o carácter não for reconhecido.
+     * Converts a single character into its respective cardinal point (Compass).
+     *
+     * @param ch The character to be converted ('n', 's', 'e', or 'o').
+     * @return The corresponding {@link Compass} direction, or UNKNOWN if the character is not recognized.
      */
     static Compass charToCompass(char ch) {
         Compass bearing;
