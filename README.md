@@ -4,7 +4,7 @@ Versão académica básica do jogo 'Batalha Naval' para construir sobre.
 
 ## Group Nickname
 
-TP06-01 (DFJ)
+TP06-01 (DFJP)
 
 ## Team Members
 
@@ -13,6 +13,7 @@ TP06-01 (DFJ)
 | 122994  | Diogo Abegão da Silva Ramos de Almeida                 | IGE    |
 | 122466  | José Maria Belo de Morais Sequeira Remédios           | IGE    |
 | 110323  | Francisco Meirinho da Silva   | IGE    |
+| 122475  | Pedro Miranda Garcia Vicêncio   | IGE-PL    |
 
 ## Battleships
 
@@ -54,6 +55,3 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
 
 ### 5. Condição de Vitória
 - Ganha o jogo o primeiro jogador a **afundar todos os navios** da frota adversária.
-
-
-ze remedios
