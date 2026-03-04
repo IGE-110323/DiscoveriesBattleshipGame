@@ -1,24 +1,24 @@
 package iscteiul.ista.battleship;
 
 /**
- * Representa uma Caravela na frota dos Descobrimentos.
- * De acordo com as regras do jogo, este navio ocupa 2 posições no tabuleiro.
- * * @author Teu Nome de Aluno
+ * Represents a Caravel in the Age of Discoveries fleet.
+ * According to the game rules, this ship occupies 2 positions on the board.
  */
 public class Caravel extends Ship {
-    /** Tamanho fixo da Caravela (ocupa 2 quadrados). */
+    /** Fixed size of the Caravel (occupies 2 squares). */
     private static final Integer SIZE = 2;
 
-    /** Nome representativo do navio. */
-    private static final String NAME = "Caravela";
+    /** Representative name of the ship. */
+    private static final String NAME = "Caravel";
 
     /**
-     * Construtor que inicializa uma Caravela com a sua orientação e posição inicial.
-     * O navio será desenhado ocupando 2 posições consecutivas.
-     * * @param bearing A orientação para onde a Caravela aponta (Norte, Sul, Este, Oeste).
-     * @param pos     O ponto (coordenada) inicial para posicionar a Caravela.
-     * @throws NullPointerException     Se a orientação (bearing) fornecida for nula.
-     * @throws IllegalArgumentException Se a orientação for inválida (ex: UNKNOWN).
+     * Constructor that initializes a Caravel with its initial bearing and position.
+     * The ship will be drawn occupying 2 consecutive positions.
+     *
+     * @param bearing The bearing the Caravel points to (North, South, East, West).
+     * @param pos     The initial point (coordinate) to position the Caravel.
+     * @throws NullPointerException     If the provided bearing is null.
+     * @throws IllegalArgumentException If the bearing is invalid (e.g., UNKNOWN).
      */
     public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
         super(Caravel.NAME, bearing, pos);
@@ -44,8 +44,9 @@ public class Caravel extends Ship {
     }
 
     /**
-     * Devolve o tamanho da Caravela.
-     * * @return O número de posições que este navio ocupa (2).
+     * Returns the size of the Caravel.
+     *
+     * @return The number of positions this ship occupies (2).
      */
     @Override
     public Integer getSize() {

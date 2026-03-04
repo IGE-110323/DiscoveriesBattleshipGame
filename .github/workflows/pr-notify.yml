@@ -1,6 +1,5 @@
-name: Notify Assignee on Pull Request
+name: Notify Assignees on Pull Request
 
-# Permissões necessárias para permitir comentários no PR
 permissions:
   pull-requests: write
 
@@ -19,18 +18,18 @@ jobs:
       - name: Authenticate GitHub CLI
         run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Notify assignee
+      - name: Notify all assignees
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          ASSIGNEE=$(jq -r '.pull_request.assignee.login // empty' "$GITHUB_EVENT_PATH")
+          ASSIGNEES=$(jq -r '.pull_request.assignees[].login // empty' "$GITHUB_EVENT_PATH")
 
-          if [ -z "$ASSIGNEE" ]; then
-            echo "No assignee found. Skipping notification."
+          if [ -z "$ASSIGNEES" ]; then
+            echo "No assignees found. Skipping notification."
             exit 0
           fi
 
-          gh pr comment "$PR_NUMBER" --body "👋 Olá @$ASSIGNEE!
-          Tens um novo Pull Request atribuído a ti.
-          Dá uma vista de olhos quando puderes."
+          for USER in $ASSIGNEES; do
+            gh pr comment "$PR_NUMBER" --body "👋 Olá @$USER! Tens um novo 'Pull Request' atribuído a ti. Dá uma vista de olhos quando puderes!"
+          done
