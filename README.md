@@ -55,3 +55,10 @@ Nesta versão do jogo, utilizamos embarcações históricas que variam em dimens
 
 ### 5. Condição de Vitória
 - Ganha o jogo o primeiro jogador a **afundar todos os navios** da frota adversária.
+
+
+## CI/CD Workflows
+
+### Java with Maven
+https://github.com/IGE-110323/DiscoveriesBattleshipGame/blob/main/.github/workflows/javawithmaven.yml
+Executa automaticamente os testes unitários JUnit a cada push ou pull request para o branch `main`.
