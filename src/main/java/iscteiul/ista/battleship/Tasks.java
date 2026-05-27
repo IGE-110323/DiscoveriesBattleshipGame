@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 public class Tasks {
 
     /** Logger used to output task results and diagnostic messages. */
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger(Tasks.class);
 
     /** Number of shots fired in a single firing round. */
     private static final int NUMBER_SHOTS = 3;
